@@ -21,7 +21,7 @@ libc++ is a new implementation of the C++
 standard library, targeting C++11.
 
 %prep
-%setup -q
+%setup -qn %{name}-%{version}.src
 
 %build
 %cmake
