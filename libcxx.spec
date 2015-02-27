@@ -24,6 +24,7 @@ standard library, targeting C++11.
 %setup -qn %{name}-%{version}.src
 
 %build
+%define _disable_ld_no_undefined 1
 %cmake
 %make
 
